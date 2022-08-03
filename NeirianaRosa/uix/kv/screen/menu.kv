@@ -1,0 +1,33 @@
+#: import MDApp kivymd.app.MDApp
+<Menu>:
+    MDBoxLayout:
+        orientation:'vertical'
+        adaptive_size:True
+        pos_hint:{'center_x':0.5,'center_y':0.5}
+        spacing:dp(15)
+        FitImage:
+            source:'./NeirianaRosa/img/logo.png'
+            size_hint:None,None
+            size:dp(150),dp(150)
+            pos_hint:{'center_x':0.5}
+        MDBoxLayout:
+            orientation:'vertical'
+            adaptive_size:True
+            spacing:dp(5)
+            pos_hint:{'center_x':0.5}
+            MDFillRoundFlatButton:
+                text:'TÁBUA DE MARÉ'
+                md_bg_color:142/255,105/255,78/255,1
+                pos_hint:{'center_x':0.5}
+                font_name:'./NeirianaRosa/font/buttershine.otf'
+                on_release:MDApp.get_running_app().goto('Tabua')
+
+            MDFillRoundFlatButton:
+                text:'STORY IMAGE'
+                md_bg_color:142/255,105/255,78/255,1
+                pos_hint:{'center_x':0.5}
+                font_name:'./NeirianaRosa/font/buttershine.otf'
+                on_release:MDApp.get_running_app().goto('Generate Story')
+            
+            
+            

@@ -1,0 +1,15 @@
+<GenerateStory>:
+    MDBoxLayout:
+        orientation:'vertical'
+        MDRaisedButton:
+            text:'Gerar'
+            on_release:root.to_screen(texto.text)
+            md_bg_color:142/255,105/255,78/255,1
+        MDBoxLayout:
+            MDTextField:
+                id:texto
+                hint_text:'Digite o Texto'
+                multiline:True
+                pos_hint:{'top':1}
+                font_size:dp(20)
+    

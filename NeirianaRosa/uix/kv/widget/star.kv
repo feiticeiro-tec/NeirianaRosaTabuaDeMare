@@ -1,0 +1,16 @@
+<Star>:
+    padding: dp(9)
+    orientation:'vertical'
+    size_hint_y:None
+    FitImage:
+        source:root.image
+        pos_hint:{'center_x':0.5}
+        allow_stretch:True
+        size_hint:None,None
+        size:root.height,root.height
+    MDLabel:
+        text:root.text
+        color:142/255,105/255,78/255,1
+        halign:'center'
+        font_name:'./NeirianaRosa/font/buttershine.otf'
+        font_size:dp(24)
